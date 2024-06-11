@@ -1,0 +1,20 @@
+{
+  "name": "easydepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install:client": "cd easydepo-client && npm install",
+    "install:server": "cd easydepo-server && npm install",
+    "install": "npm run install:client && npm run install:server",
+    "start:client": "cd easydepo-client && npm run dev",
+    "start:server": "cd easydepo-server && npm run dev",
+    "start": "concurrently \"npm run start:client\" \"npm run start:server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
